@@ -505,5 +505,44 @@
                 </div>
             </section>
         </div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- Place this *after* you load the Swiper JS CDN (or your local Swiper bundle) -->
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+			/* Grab every Elementor/Swiper carousel on the page */
+			document
+				.querySelectorAll('.e-widget-swiper .elementor-main-swiper')
+				.forEach((sliderEl) => {
+				/* Initialise Swiper with autoplay enabled */
+				new Swiper(sliderEl, {
+					/* Basic layout ‒ adjust if you need different values */
+					slidesPerView: 2,
+					spaceBetween: 28,
+			
+					/* Make it loop so the autoplay never stops */
+					loop: true,
+			
+					/* Autoplay settings (5 s per slide, keep running on user interaction) */
+					autoplay: {
+					delay: 5000,
+					disableOnInteraction: false
+					},
+			
+					/* Keep the Elementor bullets working */
+					pagination: {
+					el: sliderEl.querySelector('.swiper-pagination'),
+					clickable: true
+					},
+			
+					/* Responsive tweak: single slide on tablets/phones */
+					breakpoints: {
+					0:   { slidesPerView: 1, spaceBetween: 10 },
+					768: { slidesPerView: 2, spaceBetween: 20 }
+					}
+				});
+				});
+			});
+		</script>
+	
     </body>
 </html>
