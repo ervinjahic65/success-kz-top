@@ -211,4 +211,12 @@ img.wp-smiley, img.emoji {
                         display: none;
                         }
 
+                    .elementor-15683 .elementor-element.elementor-element-6df0f29:not(.elementor-motion-effects-element-type-background) {
+                        padding: 3% !important;
+                    }
+
+                    .elementor-widget-container a:hover {
+                        text-decoration: underline;
+                    }
+
                         
