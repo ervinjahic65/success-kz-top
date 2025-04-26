@@ -148,6 +148,17 @@
                                             </div>
                                         </div>
                                     </form>
+									<script>
+										document.getElementById("form").addEventListener("submit", function (e) {
+											e.preventDefault();
+										
+											document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+										
+											setTimeout(() => {
+												document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Thank you for register with {Company}. Our team will get in touch with you shortly to discuss your options.</p>';
+											}, 2000);
+										});
+									</script>
                                 </div>
                             </div>
                         </div>
