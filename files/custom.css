@@ -215,6 +215,10 @@ img.wp-smiley, img.emoji {
                         padding: 3% !important;
                     }
 
+                    .elementor-15683 .elementor-element.elementor-element-5be1bf77 .elementor-icon-list-icon {
+                        padding-top: 9px;
+                    }
+
                     .elementor-widget-container a:hover {
                         text-decoration: underline;
                     }
