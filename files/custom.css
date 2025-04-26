@@ -219,4 +219,50 @@ img.wp-smiley, img.emoji {
                         text-decoration: underline;
                     }
 
+                    /* ===== FAQ ACCORDION – {Company} ===== */
+
+                    #faq {
+                        margin-bottom: 50px;
+                    }
+
+                    .faq-accordion .faq-item {
+                        border-bottom: 1px solid #e5e5e5;
+                    }
+                    
+                    /* QUESTION LINE */
+                    .faq-question {
+                        display: block;
+                        position: relative;
+                        padding: 15px 48px 15px 0;
+                        font-weight: 600;
+                        cursor: pointer;
+                        list-style: none;
+                    }
+                    
+                    /* Font Awesome chevron (uses FA already loaded on the site) */
+                    .faq-question::after {
+                        content: "\f107";               /* chevron-down */
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: transform .3s ease;
+                    }
+                    
+                    /* ROTATE chevron when open */
+                    .faq-item[open] > .faq-question::after {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                    
+                    /* ANSWER PANEL */
+                    .faq-answer {
+                        padding: 0 0 16px 0;
+                        font-weight: 400;
+                        line-height: 1.6;
+                        color: #555;
+                    }
+  
+
                         
