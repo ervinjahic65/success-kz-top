@@ -1,1 +1,1 @@
-Visit on https://successkztop.com/in/
+Visit on https://success-kz-top.netlify.app/in/
